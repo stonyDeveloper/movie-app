@@ -7,7 +7,7 @@ export default createStore({
         error: null,
         loading: null,
         movie: null,
-        totalResults: 1,
+        totalResults: 0,
     },
     getters: {},
     mutations: {
