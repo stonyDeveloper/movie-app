@@ -196,6 +196,15 @@ export default {
   .input-container {
     width: 90%;
   }
+  .input-container:focus-within {
+    box-shadow: 0 0 0 2px #c53939;
+  }
+  .input-container input:focus,
+  .input-container input:focus-within,
+  .input-container input:focus-visible {
+    outline: none;
+    border: none;
+  }
 }
 
 .movie {
