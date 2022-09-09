@@ -42,7 +42,7 @@
         </div>
       </div>
 
-      <div class="pagination">
+      <div class="pagination" v-if="movieList.length > 0">
         <div
           :class="['page', { active: page == currentPage }]"
           v-for="page in totalPages"
@@ -165,7 +165,7 @@ export default {
 }
 
 .illustration {
-  margin-top: 144px;
+  margin-top: 70px;
   width: 100%;
 }
 
