@@ -174,6 +174,7 @@ export default {
   max-width: 715px;
   margin-inline: auto;
   display: block;
+  -webkit-box-reflect: below -100px linear-gradient(transparent, transparent, #0004);
 }
 
 .movie-list {
@@ -194,11 +195,9 @@ export default {
 
 @media (max-width: 400px) {
   .input-container {
-    width: 90%;
+    width: 94%;
   }
-  .input-container:focus-within {
-    box-shadow: 0 0 0 2px #c53939;
-  }
+
   .input-container input:focus,
   .input-container input:focus-within,
   .input-container input:focus-visible {
