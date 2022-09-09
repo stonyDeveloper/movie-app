@@ -194,7 +194,7 @@ export default {
 
 @media (max-width: 400px) {
   .input-container {
-    width: auto;
+    width: 90%;
   }
 }
 
