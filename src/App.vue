@@ -1,18 +1,38 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <NavBar></NavBar>
+  <router-view />
 </template>
 
+<script>
+import NavBar from "./components/NavBar";
+export default {
+  name: "App",
+  components: {
+    NavBar,
+  },
+};
+</script>
+
 <style>
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  background-color: #242222;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  width: calc(100vw - 64px);
+  margin-inline: auto;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  /* text-align: center; */
+  /* color: #2c3e50; */
 }
 
 nav {
