@@ -125,6 +125,10 @@ export default {
   display: flex;
   background: #313030;
   border-radius: 100px;
+  position: sticky;
+  top: 80px;
+  box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  z-index: 90;
 }
 
 .input-container:focus-within {
@@ -185,6 +189,12 @@ export default {
 @media (min-width: 800px) {
   .movie-list {
     grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .input-container {
+    width: auto;
   }
 }
 

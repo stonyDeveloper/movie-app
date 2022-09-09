@@ -20,6 +20,7 @@ export default {
   color: #fff;
   position: sticky;
   top: 0;
+  z-index: 90;
 }
 
 .logo {
