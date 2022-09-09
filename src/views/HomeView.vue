@@ -206,6 +206,15 @@ export default {
   }
 }
 
+@media (max-width: 800px) {
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+}
+
 .movie {
   width: 100%;
   transition: transform 300ms ease;
