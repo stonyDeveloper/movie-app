@@ -213,6 +213,10 @@ export default {
   button:focus {
     outline: none;
   }
+
+  .illustration img {
+    -webkit-box-reflect: below -50px linear-gradient(transparent, transparent, #0004);
+  }
 }
 
 .movie {
